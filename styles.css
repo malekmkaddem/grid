@@ -73,6 +73,7 @@
     html{
         scroll-behavior: smooth;
     }
+  
     #image {
         
     border-radius: 50%;
@@ -81,6 +82,7 @@
 }
     
     .wrapper{
+        
         width: 100%;
     display: grid;
   grid-gap: 0.5em;
@@ -96,21 +98,23 @@
      ;
 }
     .hi{
+       
     grid-area: hi;
     display: grid;
     grid-template-columns: 1fr;
         grid-template-areas: 
-            'grid1'
             'grid2'
+            'grid1'
         
         ;
    
     
 }
+   
     
 
 .wrapper > div{
-  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     padding: 1em;
     align-content: center;
     text-align: center;
