@@ -145,14 +145,16 @@
     }
    
     .wrapper{
-         padding-left: 1%;
+padding-top: 1.2%;  
+padding-left: 1.5%;
   padding-right: 1.5%;
     }
 
 
     p{
-        font-size: 110%;
-        font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+        
+        font-size: 28px;
+        font-family:Brush Script MT, Brush Script Std, cursive;
     }
    
   
@@ -517,6 +519,56 @@ button:hover {
         height: 90%;
     }
 
+    /* instagram logo*/
     
+    @logo-size: 10%;
     
+    #instagramLogo {
+    @REFERENCE_LOGO_SIZE: 269px;
+    @REFERENCE_LOGO_BORDER_WIDTH: 17px;
+    @LOGO_SCALING_RATIO: @logo-size / @REFERENCE_LOGO_SIZE;
+    @LOGO_BORDER_WIDTH: @REFERENCE_LOGO_BORDER_WIDTH * @LOGO_SCALING_RATIO;
+    
+    position: relative;
+    width: @logo-size;
+    height: @logo-size;
+    overflow: hidden;
+    background: linear-gradient(145deg, #3051F1 10%, #C92BB7 70%) no-repeat;
+    border-radius: 62px * @LOGO_SCALING_RATIO;
+    box-shadow: 0px (2px * @LOGO_SCALING_RATIO) (9px * @LOGO_SCALING_RATIO) rgba(0,0,0,0.25);
+
+    
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        content: '';
+        background: radial-gradient(circle farthest-corner at 28% 100% ,
+            #FCDF8F 0%, 
+            #FBD377 10%,
+            #FA8E37 22%,
+            #F73344 35%,
+            fade(#F73344, 0%) 65%
+        ) no-repeat;
+    }
+    
+    &, * {
+        box-sizing: border-box;
+    }
+    
+    * {
+        position: absolute;
+        display: block;
+    }
+    
+  
+   
+
+
+
+    
+}
 }
