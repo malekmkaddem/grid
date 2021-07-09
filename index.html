@@ -1,518 +1,171 @@
-@keyframes grow {
-  100% {
-    height: 90%;
-    width: 90%;
-  }
-}
-
-@keyframes fadeIn {
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-:root{
-	--mainColor:#eaeaea;
-	--secondaryColor:#fff;
-
-	--borderColor:#c1c1c1;
-
-	--mainText:red;
-	--secondaryText:#4b5156;
-
-	--themeDotBorder:#24292e;
-
-	--previewBg:rgb(251, 249, 243, 0.8);
-	--previewShadow:#f0ead6;
-
-
-	--buttonColor:black;
-    --darkgrey : #212329;
-    --brightred : #f9423d;
-        --white : #fff;
-    --lightred: #f9433dcc;
-}
-
-
-.wrapper{
-    display: grid;
-    width: 100%;
-    grid-template-rows: 1fr 1fr;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     
-    grid-gap: 1em;
-    grid-template-areas: 
-        'hi hi'
-        'about footage'
-        'photos resume'
-        'contact contact'
+      <link rel="stylesheet" href="styles.css" />
+      <link id="theme-style" rel="stylesheet" type="text/css" href="">
+       <link rel = "Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+      </head>
+    <body>
+        
+         
+         <a href="#name"><i class = "ui big fixed sticky arrow circle up icon" id = "scrollTop"></i></a>
+        
+        <a href="#menu"> <i  class = "ui big fixed sticky bars icon" id = "menuIcon" >  </i> </a>
+        
+
+
+  <div class="popover" id="menu">
+    <div class='content'>
+      <a href="#" class="close"></a>
+      <div class='nav'>
+          <div id="theme-options-wrapper">
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+					</div>
+          
+        <ul class='nav_list'>
+            
+            
+
+          <div class='nav_list_item'>
+            <li><a href="#home">Home</a></li>
+          </div>
+          <div class='nav_list_item'>
+            <li><a href="#about">About</a></li>
+          </div>
+          <div class='nav_list_item'>
+            <li><a href="#footage">Footage</a></li>
+          </div>
+          <div class='nav_list_item'>
+            <li><a href="#photos">Photos</a></li>
+          </div>
+          <div class='nav_list_item'>
+            <li><a href="#resume">Resume</a></li>
+          </div>
+             <div class='nav_list_item'>
+            <li><a href="#contact">Contact</a></li>
+          </div>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+        <div class ="wrapper">
+            
+            
+    <div class ="hi" id ="home">
         
         
+        <div class ="grid1">
+            <h2 id ="name"> Hesham Elmorsi</h2>
+            
+        <img id ="image" src="image-23-06-21-08-39_adobespark%20(1).png" alt="" >  
+            
+        </div>
         
-     ;
-}
-.hi{
-    grid-area: hi;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
-    
-}
-
-.about{
-    grid-area: about;
-    
-}
-.footage{
-    grid-area: footage;
-}
-.photos{
-    grid-area: photos;
-}
-.resume{
-    grid-area: resume;
-}
-.contact{
-    grid-area: contact;
-}
-
-.wrapper > div{
-    
-    padding: 1em;
-}
-
-
-
-@media only screen and (max-width: 800px){
-    html{
-        scroll-behavior: smooth;
-    }
+        <h3 id ="welcomeMsgHi" >Hi</h3>
+        <div class ="grid2"> 	
+            
+            <hr>
+            <hr>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        </div>
+            
+    <div class ="about" id ="about">
+        <p>about</p>
+        <hr>
+        <hr>
+        <div class ="grid4">	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        </div>
+        
+    <div class ="footage" id ="footage">
+        <div class ="grid5">
+        <p>footage</p>
+            <hr>
+            <hr>
+            
+    <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <iframe id ="videos" width="560" height="315" src="https://www.youtube.com/embed/m6xSTVy7N9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <iframe id ="videos" width="560" height="315" src="https://www.youtube.com/embed/m6xSTVy7N9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <iframe id ="videos" width="560" height="315" src="https://www.youtube.com/embed/m6xSTVy7N9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+            
+        </div>
+            
+            <div class ="photos" id ="photos">
+        <div class ="grid6">
+        <p>photos</p>
+            <hr>
+            <hr>
+            <br>
+            <img id ="photos" src="image-23-06-21-08-39-1.png" alt="">
+            <br>
+            <img id ="photos" src="image-23-06-21-08-39.png" alt="">
+            <br>
+            <img id = "photos" src="image-23-06-21-08-40.png" alt="">
+        </div>
+            
+            
+        </div>
+            
+             <div class ="resume" id ="resume">
+        <div class ="grid7">
+        <p>Resume</p>
+            <hr>
+            <hr>
+            <img id ="imageResume" src="Resume.jpeg">
+            <a href="Resume.jpeg" download="Hesham Elmorsy Resume"><p>Download Resume</p></a>
+            
+        </div>
+            
+            
+        </div>
+            
+            <div class ="contact" id ="contact">
+        
+      <p>Contact</p>
+                <hr>
+                <hr>
+            
+            <form class="form">
   
-    #image {
-        
-    border-radius: 50%;
-  width: 244px;
-  height: 244px;
-}
-    
-    .wrapper{
-        
-        width: 100%;
-    display: grid;
-  grid-gap: 0.5em;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-        
-        'hi'
-        'about'
-        'footage'
-        'photos'
-        'resume'
-        'contact'
-     ;
-}
-    .hi{
-       
-    grid-area: hi;
-    display: grid;
-    grid-template-columns: 1fr;
-        grid-template-areas: 
-            'grid2'
-            'grid1'
-        
-        ;
-   
-    
-}
-   
-    
-
-.wrapper > div{
- box-shadow: rgba(50, 50, 93, 0.25) 1px -50px 100px -20px, rgba(0, 0, 0, 0.3) 1px -30px 60px -30px, rgba(10, 37, 64, 0.35) 1px -2px 6px 0px inset;
-    box-sizing:border-box;
-    
-    align-content: center;
-    text-align: center;
-    display: grid;
-    width: 100%;
-    height: auto;
-    
-    }
-   
+                  <h2 id= "contactTitle">Contact me</h2>
+  <p type="Name:"><input ></p>
+  <p type="Email:"><input ></p>
+  <p type="Message:"><input id ="contactMsgBox" ></p>
+  <button>Send Message</button>
   
-
-
-   
-   
-    * {
-  padding-left: 0.75%;
-  padding-right: 0.85%;
-}
-/*Menu starts here*/
-
-    .container {
-  min-height: 300vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  scroll-behavior: smooth;
-  background: #131313;
-  font-family: "Helvetica Neue", sans-serif;
-}
-
-
-
-.popover {
-  display: none;
-  box-shadow: 0px 6px 8px rgba(19, 19, 19, 0.7);
-}
-
-.popover:target {
-  position:fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.popover .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 0;
-  height: 0;
-  color: #fff;
-  background-color: #191919;
-  animation: 0.75s grow ease forwards;
-  text-align: center;
-}
-
-.nav_list {
-  list-style-type: none;
-}
-
-.nav_list a {
-  text-decoration: none;
-  font-size: 50px;
-  color: #fff;
-}
-
-.nav_list_item {
-  height: 100%;
-  overflow: hidden;
-}
-
-.nav_list li {
-  padding: 15px 0;
-  text-transform: uppercase;
-  transform: translateY(200px);
-  opacity: 0;
-  animation: 1s slideUp ease forwards 0.5s;
-  position: relative;
-}
-
-.nav_list li::before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 0px;
-  left: 0;
-  bottom: 10px;
-  background: #bf2e97;
-  transition: all 0.5s ease;
-}
-
-.nav_list li:hover:before {
-  width: 100%;
-}
-
-.popover p {
-  padding: 50px;
-  opacity: 0;
-  animation: 1s fadeIn ease forwards 1s;
-}
-
-.popover .close::after {
-  right: 0;
-  top: 0;
-  width: 50px;
-  height: 50px;
-  position: absolute;
-  display: flex;
-  z-index: 1;
-  font-size: 30px;
-  align-items: center;
-  justify-content: center;
-  background-color: #bf2e97;
-  color: #fff;
-  content: "×";
-  cursor: pointer;
-  opacity: 0;
-  animation: 1s fadeIn ease forwards 0.5s;
-}
-
-@keyframes grow {
-  100% {
-    height: 90%;
-    width: 90%;
-  }
-}
-
-@keyframes fadeIn {
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-/* menu ends here*/
-    
-    
-
-}
-
-
-
-
-
-
-
-
-    
-@media only screen and (min-width: 768px) {
-    #menu{
-        display: none;
-    }
-   
-}
-
-@media only screen and (max-width: 768px) {
-  
-    #hi{
-        float: left;
-    }
-
-  #menuIcon {
-    
-    cursor: pointer;
-    right: 1%;
-    top: 3%;
-    transform: translate(-5%, -50%);
-    z-index: 2;
-  }
-    #scrollTop{
-    cursor: pointer;
-    right: 1%;
-    top: 95%;
-    z-index: 2;
-    }
-    
-    #photos {
-  max-width: 100%;
-  max-height: 200%;
-}
-    #videos {
-width: 100 %; 
-max-width: 100%;
-  height: auto;
-        max-height: 100%;
-}
- 
-    
-    
-    #imageResume{
-        max-width: 100%;
-  max-height: 100%;
-    }
-    
-    
-    hr{
-        border: 1px double lightblue;
-    }  
-    
-    /* Theme background starts here */
-    
-    
-    
-    
-    .dots-wrapper{
+</form>
+            
+            
+            
         
-	display: flex;
-	padding: 10px;
-}
-
-#dot-1{
+               
+            
+            
+        </div>
     
-	background-color:  #FC6058;
-}
-
-#dot-2{
-	background-color:  #FEC02F;
-}
-
-#dot-3{
-	background-color:  #2ACA3E;
-}
-
-.browser-dot{
+    </div>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+        <script type="text/javascript" src="backEnd.js"></script>
+        
+    </body>
+   
     
-	background-color: black;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	margin: 5px;
-
-	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-
-}
-    #theme-options-wrapper{
-        animation: 5s fadeIn ease forwards 0s;
-	display: flex;
-	justify-content: center;
-}
-
-.theme-dot{
-    
-	height: 30px;
-	width: 30px;
-	background-color: black;
-	border-radius: 50%;
-
-	margin: 5px;
-	border:2px solid var(--themeDotBorder);
-
-	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-
-	cursor: pointer;
-}
-
-
-.theme-dot:hover{
-	border-width: 5px;
-}
-
-
-#light-mode{
-	background-color: #fff;
-}
-
-#blue-mode{
-	background-color: #192734;
-}
-
-#green-mode{
-	background-color: #78866b;
-}
-
-#purple-mode{
-	background-color: #7E4C74;
-}
-
-    #preview-shadow{
-	background-color: var(--previewShadow);
-	max-width: 300px;
-	height: 180px;
-	padding-left: 30px;
-	padding-top: 30px;
-}
-
-#preview{
-	width: 300px;
-	border:1.5px solid #17a2b8;
-	background-color: var(--previewBg);
-	padding:15px;
-	position: relative;
-}
-    
-    /*Theme config ends here*/
-    
-    /* Contact me form Starts here */
-    
-    
-    .form {
-
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        max-height: 100%;
-  background: #e6e6e6;
-  border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
-  margin: calc(50vh - 220px) auto;
-  padding: 20px 30px;
-  
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  
-}
-#contactTitle {
-  margin: 10px 0;
-  padding-bottom: 10px;
-  width: 180px;
-  color: #78788c;
-  border-bottom: 3px solid #78788c;
-}
-input {
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  background: none;
-  outline: none;
-  resize: none;
-  border: 0;
-  font-family: "Montserrat", sans-serif;
-  transition: all 0.3s;
-  border-bottom: 2px solid #bebed2;
-}
-input:focus {
-  border-bottom: 2px solid #78788c;
-}
-p:before {
-  content: attr(type);
-  display: block;
-  margin: 28px 0 0;
-  font-size: 14px;
-  color: #5a5a5a;
-}
-button {
-  float: right;
-  padding: 8px 12px;
-  margin: 8px 0 0;
-  font-family: "Montserrat", sans-serif;
-  border: 2px solid #78788c;
-  background: 0;
-  color: #5a5a6e;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-button:hover {
-  background: #78788c;
-  color: #fff;
-}
-
-    #contactMsgBox{
-        vertical-align: middle;
-        height: 90%;
-    }
-
-    
-    
-}
+     
+</html>
