@@ -141,7 +141,8 @@
     display: grid;
     width: 100%;
     height: auto;
-    
+    padding-left: 1%;
+  padding-right: 1.5%;
     }
    
   
@@ -149,10 +150,7 @@
 
    
    
-    * {
-  padding-left: 1%;
-  padding-right: 1.5%;
-}
+  
 /*Menu starts here*/
 
     .container {
@@ -163,6 +161,7 @@
   scroll-behavior: smooth;
   background: #131313;
   font-family: "Helvetica Neue", sans-serif;
+        
 }
 
 
