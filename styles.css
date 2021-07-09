@@ -141,11 +141,13 @@
     display: grid;
     width: 100%;
     height: auto;
-    padding-left: 1%;
-  padding-right: 1.5%;
+   
     }
    
-  
+    .wrapper{
+         padding-left: 1%;
+  padding-right: 1.5%;
+    }
 
 
    
@@ -154,8 +156,8 @@
 /*Menu starts here*/
 
     .container {
-  min-height: 300vh;
-  display: flex;
+  min-height: 380vh;
+  display: contents;
   justify-content: center;
   align-items: center;
   scroll-behavior: smooth;
