@@ -81,6 +81,7 @@
     grid-area: contact;
 }
 
+
 .wrapper > div{
     
     padding: 1em;
@@ -114,6 +115,7 @@
         'photos'
         'resume'
         'contact'
+        
      ;
 }
     .hi{
@@ -141,6 +143,7 @@
     display: grid;
     width: 100%;
     height: auto;
+    background-color:bisque;
    
     }
    
@@ -148,15 +151,32 @@
 padding-top: 1.2%;  
 padding-left: 1.5%;
   padding-right: 1.5%;
+        
+
     }
 
 
     p{
         
-        font-size: 28px;
+        font-size: 30px;
         font-family:Brush Script MT, Brush Script Std, cursive;
     }
-   
+  
+        
+    
+    #footer{
+    position:static;
+    color: white;
+    background: #444444;
+    height: auto;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    
+    }
+    #copyRight{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+    }
   
 /*Menu starts here*/
 
