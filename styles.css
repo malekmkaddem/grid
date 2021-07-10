@@ -84,7 +84,7 @@
 
 .wrapper > div{
     
-    padding: 1em;
+    padding: 0.5em;
 }
 
 
@@ -328,9 +328,7 @@ padding-left: 1.5%;
 
 @media only screen and (max-width: 768px) {
   
-    #hi{
-        float: left;
-    }
+    
 
   #menuIcon {
     
