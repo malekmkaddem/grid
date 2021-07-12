@@ -1,5 +1,3 @@
-
-
 let theme = localStorage.getItem('theme')
 
 if(theme == null){
@@ -57,4 +55,4 @@ function filterFunction() {
       a[i].style.display = "none";
     }
   }
-}   
+} 
