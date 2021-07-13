@@ -1,45 +1,5 @@
-@keyframes grow {
-  100% {
-    height: 90%;
-    width: 90%;
-  }
-}
-
-@keyframes fadeIn {
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideUp {
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-:root{
-	--mainColor:#eaeaea;
-	--secondaryColor:#fff;
-
-	--borderColor:#c1c1c1;
-
-	--mainText:red;
-	--secondaryText:#4b5156;
-
-	--themeDotBorder:#24292e;
-
-	--previewBg:rgb(251, 249, 243, 0.8);
-	--previewShadow:#f0ead6;
-
-
-	--buttonColor:black;
-    --darkgrey : #212329;
-    --brightred : #f9423d;
-        --white : #fff;
-    --lightred: #f9433dcc;
-}
-
-
+/*----------------------------------------*/
+/* Desktop Version */
 .wrapper{
     display: grid;
     width: 100%;
@@ -85,11 +45,23 @@
 .wrapper > div{
     
     padding: 0.5em;
+    box-shadow: rgba(50, 50, 93, 0.25) 1px -50px 100px -20px, rgba(0, 0, 0, 0.3) 1px -30px 60px -30px, rgba(10, 37, 64, 0.35) 1px -2px 6px 0px inset;
+    box-sizing:border-box;
+    
+    align-content: center;
+    text-align: center;
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color:bisque;
 }
+/* Desktop Version */
+/*--------------------------------------------------*/
 
+/*--------------------------------------------------*/
+/*Mobile/Ipad Version*/ 
 
-
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1000px){ 
     html{
         scroll-behavior: smooth;
     }
@@ -322,14 +294,14 @@ display:flex;
 
 
     
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
     #menu{
         display: none;
     }
    
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
   
     
 
@@ -371,105 +343,7 @@ max-width: 100%;
         border: 1px double lightblue;
     }  
     
-    /* Theme background starts here */
     
-    
-    
-    
-    .dots-wrapper{
-        
-	display: flex;
-	padding: 10px;
-}
-
-#dot-1{
-    
-	background-color:  #FC6058;
-}
-
-#dot-2{
-	background-color:  #FEC02F;
-}
-
-#dot-3{
-	background-color:  #2ACA3E;
-}
-
-.browser-dot{
-    
-	background-color: black;
-	height: 15px;
-	width: 15px;
-	border-radius: 50%;
-	margin: 5px;
-
-	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-
-}
-    #theme-options-wrapper{
-        animation: 5s fadeIn ease forwards 0s;
-	display: flex;
-	justify-content: center;
-}
-
-.theme-dot{
-    
-	height: 30px;
-	width: 30px;
-	background-color: black;
-	border-radius: 50%;
-
-	margin: 5px;
-	border:2px solid var(--themeDotBorder);
-
-	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-
-	cursor: pointer;
-}
-
-
-.theme-dot:hover{
-	border-width: 5px;
-}
-
-
-#light-mode{
-	background-color: #fff;
-}
-
-#blue-mode{
-	background-color: #192734;
-}
-
-#green-mode{
-	background-color: #78866b;
-}
-
-#purple-mode{
-	background-color: #7E4C74;
-}
-
-    #preview-shadow{
-	background-color: var(--previewShadow);
-	max-width: 300px;
-	height: 180px;
-	padding-left: 30px;
-	padding-top: 30px;
-}
-
-#preview{
-	width: 300px;
-	border:1.5px solid #17a2b8;
-	background-color: var(--previewBg);
-	padding:15px;
-	position: relative;
-}
-    
-    /*Theme config ends here*/
     
     /* Contact me form Starts here */
     
@@ -593,3 +467,5 @@ button:hover {
     
 }
 }
+/*Mobile/Ipad Version*/
+/*-------------------------------------------------------------*/
